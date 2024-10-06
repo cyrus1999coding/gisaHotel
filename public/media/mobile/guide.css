@@ -1,0 +1,89 @@
+.guide {
+  width: 100%;
+  /* height: 500px; */
+  height: fit-content;
+  /* background-color: #9b9b9b; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .guide__center {
+    width: 95%;
+    /* height: 100%; */
+    height: fit-content;
+    /* background-color: red; */
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 20px;
+    .guide__child {
+      height: fit-content;
+      /* margin-bottom: 20px; */
+      /* background-color: black; */
+      display: flex;
+      flex-flow: column wrap;
+      .child__topSection {
+        /* background-color: aqua; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 30px;
+        align-items: flex-start;
+        .topSection__rightSection {
+          width: 80%;
+          /* background-color: green; */
+          h2 {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+        .topSection__leftSection {
+          height: 30px;
+          width: 30px;
+          /* background-color: lightsalmon; */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          img {
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+      .child__bottomSection {
+        /* height: 300px; */
+        height: fit-content;
+        width: 100%;
+        /* background-color: blueviolet; */
+        /* display: flex; */
+        display: none;
+        flex-flow: column wrap;
+        
+        .bottomSection__topSection {
+          width: 100%;
+          height: 250px;
+          background-color: chartreuse;
+          border-radius: var(--border-radius-medium);
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .bottomSection__bottomSection {
+          p {
+            font-size: 16px;
+            font-family: var(--fontnaz);
+            line-height: 25px;
+          }
+        }
+      }
+      .child__bottomSection.show {
+        display: flex;
+        
+      }
+    }
+  }
+}

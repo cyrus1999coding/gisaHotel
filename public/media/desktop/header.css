@@ -1,0 +1,106 @@
+header {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  /* background-color: red; */
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  .gisa__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    .rightShow {
+      text-decoration: none;
+      font-size: 14px;
+      color: black;
+      line-height: 40px;
+      display: flex;
+      font-family: var(--fontiran);
+      img {
+        height: 40px;
+        width: 40px;
+      }
+      /* background-color: red; */
+    }
+
+    /* background-color: aqua; */
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  .rightMenu {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    /* backdrop-filter: blur(260px); */
+    background-color: #2b2b2b;
+    z-index: 101;
+    display: flex;
+    /* display: none; */
+    flex-flow: column wrap;
+    /* row-gap: 5px; */
+    transition: 300ms;
+    .svg__container {
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        fill: white;
+      }
+    }
+    .gisaMag {
+      height: 40px;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 300ms;
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        color: whitesmoke;
+        transition: 300ms;
+        cursor: pointer;
+      }
+      svg {
+        height: 20px;
+        width: 20px;
+        fill: whitesmoke;
+        transition: 300ms;
+      }
+      &:hover {
+        background-color: rgb(87, 87, 87);
+      }
+      &:hover a {
+        color: rgb(36, 36, 240);
+        font-size: 18px;
+      }
+      &:hover svg {
+        fill: rgb(240, 60, 36);
+        font-size: 18px;
+      }
+    }
+  }
+  .img-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
